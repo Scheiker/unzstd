@@ -1,0 +1,12 @@
+unzstd
+
+A Zstandard decompressor tool that reads from stdin and writes to stdout.
+unzstd takes no arguments.
+
+Example usage:
+	unzstd < file.zst > file
+	unzstd < file.tar.zst | tar -x
+	curl http://www.example.com/file.zst | unzstd > file
+
+Depends on libzstd.
+https://www.github.com/facebook/zstd
