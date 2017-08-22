@@ -18,7 +18,7 @@
 #include <stdlib.h>
 #include <zstd.h>
 
-void *
+static void *
 malloc_or_exit(size_t size)
 {
 	void *buf = malloc(size);
